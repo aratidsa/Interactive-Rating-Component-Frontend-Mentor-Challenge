@@ -1,0 +1,256 @@
+/* ---------------------  RESET ----------------------- */
+
+html,body
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img
+{
+    max-width: 100%;
+    display:block;
+}
+
+button
+{
+    font: inherit;
+}
+/* -------------------- Custom Properties ------------------- */
+
+:root
+{
+    /* Font Sizes */
+    --fs-15:0.94rem;
+    --fs-13:12.5px;
+    --fs-20:1.25rem;
+
+    /* Font Color */
+    --clr-white:0 0% 100%;
+    --clr-lightGrey:217, 12%, 63%;
+    --clr-meduimGrey:216, 12%, 54%;
+    --clr-darkBlue:216, 21%, 14%;
+    --clr-mediumDarkBlue:213, 20%, 20%;
+    --clr-lightDarkBlue:212, 14%, 18%;
+    --clr-veryDarkBlue:216, 12%, 8%;
+    --clr-orange:25, 97%, 53%;
+
+       /* Font Family */
+    --ff-serif:'Overpass', sans-serif;
+}
+
+/* -------------- Typography --------------- */
+
+/* Typography - font-family */
+.ff-serif{ font-family: var(--ff-serif);}
+
+/* Typography - font-size */
+.fs-15{ font-size: var(--fs-15);}
+.fs-13{ font-size: var(--fs-13);}
+.fs-20{ font-size: var(--fs-20);}
+
+
+
+/* Typography - background color */
+.bg-dark{ background-color:hsl(var(--clr-darkBlue));}
+.bg-orange{ background-color:hsl(var(--clr-orange));}
+.bg-mediumDark{ background-color: hsl(var(--clr-mediumDarkBlue));}
+.bg-lightDark{ background-color: hsl(var(--clr-lightDarkBlue));}
+
+
+/* Typography - text color */
+.text-white{ color:hsl(var(--clr-white));}
+.text-light{ color:hsl(var(--clr-lightGrey));}
+.text-orange{ color:hsl(var(--clr-orange));}
+
+body
+{
+    font-family: var(--ff-serif);
+    font-size: var(--fs-15) ;
+    min-height:100vh;
+    line-height: 1.5;
+    color:hsl(var(--clr-white));
+    background-color: hsl(var(--clr-veryDarkBlue));
+} 
+
+/* Utility Class */
+
+.container
+{
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+}
+
+.flex
+{
+    display:flex;
+    justify-content: center;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+/* Components */
+
+.rating-card
+{
+    width:21.25rem;
+    height:20.63rem;
+    border-radius:1.88rem;
+    position:relative;
+}
+
+.rating-section
+{
+    position:relative;
+    margin:1.56rem 1.56rem 0 1.56rem;    
+}
+
+.star-image
+{
+    width:1.88rem;
+    height:1.88rem;
+    border-radius: 50%;
+    text-align: center;    
+}
+
+.star-image img
+{
+    width:0.63rem;
+    height:0.63rem;
+    margin-top:0.63rem;
+}
+
+.card-content
+{
+    margin-top:-0.94rem;
+}
+
+.btn-rating
+{
+  margin-top:1.25rem;
+}
+
+.btn-rating button
+{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    border:none;
+    font-size: var(--fs-15);
+    cursor: pointer;
+}
+
+.rating2 , .rating3, .rating4, .rating5
+{
+    margin-left:1.25rem;
+}
+
+.btn-submit
+{
+    margin-top:1.56rem;
+}
+
+.submitBtn
+{
+    width:97%;
+    height:2.5rem;
+    border-radius: 1.88rem;
+    border:none;
+    cursor: pointer;
+}
+
+.btn-rating button:hover
+{
+    background-color:hsl(214, 12%, 35%);
+    color:black;
+}
+
+.submitBtn:hover
+{
+  background-color: hsl(25, 77%, 45%);
+}
+
+.btn-rating button:focus
+{
+    background-color:hsl(214, 17%, 81%);
+    color:black;
+}
+
+.thank-you-page
+{
+   position:absolute;
+   display:none;
+}
+
+.image-thankyou
+{
+    margin-top:2.19rem;
+    margin-bottom:0.94rem; 
+}
+
+.image-thankyou img
+{
+   width:8.31rem;
+   height:5.31rem;
+   margin:0 auto;
+}
+
+.selected-rating
+{
+    width:9.38rem;
+    background-color: hsl(213, 19%, 18%);
+    padding:5px 0.63rem;
+    text-align: center;
+    border-radius: 1.88rem;
+}
+
+.thanks-message
+{
+    margin-top:-0.63rem;
+}
+.thanks-message h1
+{
+   text-align: center;
+}
+
+.message{
+    margin-top:-0.63rem;  
+    text-align: center;  
+}
+
+.line1
+{
+    margin-left:1.88rem;
+    margin-right:1.88rem;
+}
+.line2
+{
+    margin-top:-0.75rem;   
+    margin-left:0.5rem; 
+    margin-right:2.31rem;
+    text-align: center;
+}
+.line3{
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px){
+    .message p{
+       margin-top:0;
+       margin-left:1.56rem;
+       font-size:0.81rem;
+       text-align: center;
+    }
+    .line2{
+        margin-top:0;
+        margin-left:0;
+        margin-right:0;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <title>Interactive Rating Component | Frontend Mentor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="rating-card bg-dark">
+            <section class="rating-section">
+                <section class="star">
+                   <p class="star-image flex bg-mediumDark"><img src="icon-star.svg" alt="star symbol"></p>
+                </section>
+                <section class="title fs-20">
+                   <h1>How did we do?</h1> 
+                </section>
+                <section class="card-content">
+                    <p class="text-light fs-13">Please let us know how we did with your support request. 
+                           All feedback is appreciated to help us improve our offering! 
+                    </p>
+                </section>    
+                <section class="btn-rating flex text-light">
+                    <button class="rating1 bg-lightDark" id="1">1</button>
+                    <button class="rating2 bg-lightDark" id="2">2</button>
+                    <button class="rating3 bg-lightDark" id="3">3</button>
+                    <button class="rating4 bg-lightDark" id="4">4</button>
+                    <button class="rating5 bg-lightDark" id="5">5</button>
+                </section>    
+                <section class="btn-submit">
+                    <button type="submit" class="uppercase submitBtn text-white bg-orange fs-13">Submit</button>
+                </section>   
+            </section>     
+         <section class="thank-you-page">
+                <section class="image-thankyou flex">
+                   <img src="illustration-thank-you.svg" alt="thank you image">
+                </section>
+                <section class="flex fs-13">
+                    <p class="selected-rating text-orange">You selected <span id="result">0</span> out of 5 </p>
+                </section>
+                <section class="thanks-message">
+                    <h1 class="fs-20">Thank you!</h1>
+                </section>
+                <section class="message fs-13 text-light">
+                    <p class="line1">We appreciate you taking the time to give a rating.
+                    <span class="line2">If you ever need more support, don't hesitate to <span class="line3">get in touch!</span> </span>
+                    </p>
+                </section>               
+        </section>
+        </div>         
+    </main>
+    <footer class="fs-13 flex">Challenge by Frontend Mentor. Coded by Arati D'sa.</footer>
+    <script src="app.js"></script>
+</body>
+</html>
